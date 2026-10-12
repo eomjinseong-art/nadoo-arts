@@ -17,7 +17,7 @@ export default function TimelinePage() {
     <div className="mx-auto max-w-6xl px-4 py-8">
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "연표", path: "/timeline" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "연표" }]} />
-      <PageHead kicker="TIMELINE" title="연표" lead="시대 구분은 대략입니다. 한 사람이 두 시대에 걸치기도 합니다. 왼쪽은 음악, 가운데는 미술, 오른쪽은 같은 시기의 한반도." />
+      <PageHead kicker="TIMELINE" title="연표" lead="시대 구분은 대략입니다. 한 사람이 두 시대에 걸치기도 합니다. 왼쪽은 음악, 가운데는 미술, 오른쪽은 같은 시기의 한반도. 유럽 18개 나라 예술가가 시대별로 모여 있습니다." />
       <ol className="mt-8 space-y-8">
         {PERIODS.map((p) => {
           const ms = composers.filter((c) => c.era === p.id);
@@ -30,6 +30,7 @@ export default function TimelinePage() {
                 <span className="text-sm text-muted">{p.range}</span>
               </div>
               <p className="mt-2 text-sm leading-7 text-ink">{p.summary}</p>
+              <p className="mt-2 rounded-md bg-stone/50 px-3 py-2 text-sm leading-7 text-ink"><span className="mr-2 text-xs font-semibold text-dusk">유럽 곳곳에서</span>{p.europe}</p>
               <div className="mt-4 grid gap-4 md:grid-cols-3">
                 <div className="rounded-md border border-[#3f6fe0]/30 bg-[#e8eefc]/50 p-3">
                   <p className="text-xs font-semibold text-[#3f6fe0]">♪ 음악 Music</p>

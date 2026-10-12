@@ -1,0 +1,518 @@
+{
+ "masaccio-1": [
+  "Masaccio The Tribute Money Brancacci",
+  "Masaccio"
+ ],
+ "masaccio-2": [
+  "Masaccio Holy Trinity Santa Maria Novella",
+  "Masaccio"
+ ],
+ "fra-angelico-1": [
+  "Fra Angelico Annunciation San Marco corridor",
+  "Fra Angelico"
+ ],
+ "fra-angelico-2": [
+  "Fra Angelico Annunciation Prado",
+  "Fra Angelico"
+ ],
+ "mantegna-1": [
+  "Mantegna Lamentation over the Dead Christ Brera",
+  "Andrea Mantegna"
+ ],
+ "mantegna-3": [
+  "Mantegna Saint Sebastian Louvre",
+  "Andrea Mantegna"
+ ],
+ "giorgione-1": [
+  "Giorgione The Tempest Accademia",
+  "Giorgione"
+ ],
+ "giorgione-2": [
+  "Giorgione Sleeping Venus Dresden",
+  "Giorgione"
+ ],
+ "tintoretto-1": [
+  "Tintoretto Last Supper San Giorgio Maggiore",
+  "Tintoretto"
+ ],
+ "tintoretto-2": [
+  "Tintoretto Miracle of the Slave",
+  "Tintoretto"
+ ],
+ "artemisia-1": [
+  "Artemisia Gentileschi Judith Slaying Holofernes Uffizi",
+  "Artemisia Gentileschi"
+ ],
+ "artemisia-2": [
+  "Artemisia Gentileschi Self-Portrait as the Allegory of Painting",
+  "Artemisia Gentileschi"
+ ],
+ "canaletto-1": [
+  "Canaletto The Stonemason's Yard",
+  "Canaletto"
+ ],
+ "canaletto-2": [
+  "Canaletto Regatta on the Grand Canal",
+  "Canaletto"
+ ],
+ "tiepolo-1": [
+  "Tiepolo Banquet of Cleopatra Melbourne",
+  "Giovanni Battista Tiepolo"
+ ],
+ "watteau-1": [
+  "Watteau Pilgrimage to Cythera Louvre",
+  "Antoine Watteau"
+ ],
+ "watteau-2": [
+  "Watteau Pierrot Gilles Louvre",
+  "Antoine Watteau"
+ ],
+ "fragonard-1": [
+  "Fragonard The Swing Wallace Collection",
+  "Jean-Honoré Fragonard"
+ ],
+ "fragonard-2": [
+  "Fragonard Young Girl Reading National Gallery of Art",
+  "Jean-Honoré Fragonard"
+ ],
+ "ingres-1": [
+  "Ingres Grande Odalisque Louvre",
+  "Jean-Auguste-Dominique Ingres"
+ ],
+ "ingres-2": [
+  "Ingres The Turkish Bath Louvre",
+  "Jean-Auguste-Dominique Ingres"
+ ],
+ "ingres-3": [
+  "Ingres Portrait of Monsieur Bertin",
+  "Jean-Auguste-Dominique Ingres"
+ ],
+ "courbet-1": [
+  "Courbet A Burial at Ornans",
+  "Gustave Courbet"
+ ],
+ "courbet-2": [
+  "Courbet Bonjour Monsieur Courbet",
+  "Gustave Courbet"
+ ],
+ "gauguin-1": [
+  "Gauguin Vision after the Sermon",
+  "Paul Gauguin"
+ ],
+ "gauguin-2": [
+  "Gauguin Where Do We Come From What Are We Where Are We Going",
+  "Paul Gauguin"
+ ],
+ "seurat-1": [
+  "Seurat A Sunday Afternoon on the Island of La Grande Jatte",
+  "Georges Seurat"
+ ],
+ "seurat-2": [
+  "Seurat Bathers at Asnières",
+  "Georges Seurat"
+ ],
+ "toulouse-lautrec-1": [
+  "Toulouse-Lautrec Moulin Rouge La Goulue poster",
+  "Henri de Toulouse-Lautrec"
+ ],
+ "toulouse-lautrec-2": [
+  "Toulouse-Lautrec At the Moulin Rouge Art Institute",
+  "Henri de Toulouse-Lautrec"
+ ],
+ "morisot-1": [
+  "Berthe Morisot The Cradle",
+  "Berthe Morisot"
+ ],
+ "morisot-2": [
+  "Berthe Morisot Eugene Manet and his daughter Bougival",
+  "Berthe Morisot"
+ ],
+ "pissarro-1": [
+  "Pissarro Boulevard Montmartre at Night",
+  "Camille Pissarro"
+ ],
+ "pissarro-2": [
+  "Pissarro The Red Roofs Orsay",
+  "Camille Pissarro"
+ ],
+ "rousseau-1": [
+  "Henri Rousseau The Sleeping Gypsy",
+  "Henri Rousseau"
+ ],
+ "rousseau-2": [
+  "Henri Rousseau The Dream 1910",
+  "Henri Rousseau"
+ ],
+ "caillebotte-1": [
+  "Caillebotte Paris Street Rainy Day",
+  "Gustave Caillebotte"
+ ],
+ "caillebotte-2": [
+  "Caillebotte The Floor Scrapers",
+  "Gustave Caillebotte"
+ ],
+ "van-eyck-1": [
+  "Van Eyck Arnolfini Portrait",
+  "Jan van Eyck"
+ ],
+ "van-eyck-2": [
+  "Ghent Altarpiece open",
+  "Jan van Eyck"
+ ],
+ "van-eyck-3": [
+  "Van Eyck Portrait of a Man in a Turban",
+  "Jan van Eyck"
+ ],
+ "bosch-1": [
+  "Bosch Garden of Earthly Delights Prado",
+  "Hieronymus Bosch"
+ ],
+ "bosch-2": [
+  "Bosch The Haywain Triptych Prado",
+  "Hieronymus Bosch"
+ ],
+ "bruegel-1": [
+  "Bruegel Tower of Babel Vienna",
+  "Pieter Bruegel the Elder"
+ ],
+ "bruegel-2": [
+  "Bruegel Hunters in the Snow",
+  "Pieter Bruegel the Elder"
+ ],
+ "bruegel-3": [
+  "Bruegel Peasant Wedding Vienna",
+  "Pieter Bruegel the Elder"
+ ],
+ "rubens-1": [
+  "Rubens Descent from the Cross Antwerp",
+  "Peter Paul Rubens"
+ ],
+ "rubens-2": [
+  "Rubens Rape of the Daughters of Leucippus",
+  "Peter Paul Rubens"
+ ],
+ "rembrandt-1": [
+  "Rembrandt The Night Watch",
+  "Rembrandt van Rijn"
+ ],
+ "rembrandt-2": [
+  "Rembrandt Anatomy Lesson of Dr Nicolaes Tulp",
+  "Rembrandt van Rijn"
+ ],
+ "rembrandt-3": [
+  "Rembrandt Return of the Prodigal Son Hermitage",
+  "Rembrandt van Rijn"
+ ],
+ "vermeer-1": [
+  "Vermeer Girl with a Pearl Earring",
+  "Johannes Vermeer"
+ ],
+ "vermeer-2": [
+  "Vermeer The Milkmaid Rijksmuseum",
+  "Johannes Vermeer"
+ ],
+ "vermeer-3": [
+  "Vermeer View of Delft",
+  "Johannes Vermeer"
+ ],
+ "hals-1": [
+  "Frans Hals The Laughing Cavalier",
+  "Frans Hals"
+ ],
+ "hals-2": [
+  "Frans Hals Gypsy Girl Louvre",
+  "Frans Hals"
+ ],
+ "van-dyck-1": [
+  "Van Dyck Charles I at the Hunt Louvre",
+  "Anthony van Dyck"
+ ],
+ "van-dyck-2": [
+  "Van Dyck Charles I in Three Positions",
+  "Anthony van Dyck"
+ ],
+ "mondrian-1": [
+  "Mondrian Gray Tree 1911",
+  "Piet Mondrian"
+ ],
+ "ensor-1": [
+  "Ensor Christ's Entry into Brussels in 1889",
+  "James Ensor"
+ ],
+ "ensor-2": [
+  "Ensor Self-Portrait with Masks",
+  "James Ensor"
+ ],
+ "el-greco-1": [
+  "El Greco Burial of the Count of Orgaz",
+  "El Greco"
+ ],
+ "el-greco-2": [
+  "El Greco View of Toledo",
+  "El Greco"
+ ],
+ "velazquez-1": [
+  "Velázquez Las Meninas Prado",
+  "Diego Velázquez"
+ ],
+ "velazquez-2": [
+  "Velázquez Portrait of Innocent X",
+  "Diego Velázquez"
+ ],
+ "velazquez-3": [
+  "Velázquez Surrender of Breda",
+  "Diego Velázquez"
+ ],
+ "goya-1": [
+  "Goya Third of May 1808",
+  "Francisco Goya"
+ ],
+ "goya-2": [
+  "Goya La maja desnuda",
+  "Francisco Goya"
+ ],
+ "goya-3": [
+  "Goya Saturn Devouring His Son",
+  "Francisco Goya"
+ ],
+ "murillo-1": [
+  "Murillo The Young Beggar Louvre",
+  "Bartolomé Esteban Murillo"
+ ],
+ "murillo-2": [
+  "Murillo Immaculate Conception of El Escorial",
+  "Bartolomé Esteban Murillo"
+ ],
+ "zurbaran-1": [
+  "Zurbarán Agnus Dei Prado",
+  "Francisco de Zurbarán"
+ ],
+ "zurbaran-2": [
+  "Zurbarán Still Life with Lemons Oranges and a Rose",
+  "Francisco de Zurbarán"
+ ],
+ "sorolla-1": [
+  "Sorolla Walk on the Beach",
+  "Joaquín Sorolla"
+ ],
+ "sorolla-2": [
+  "Sorolla The Return from Fishing",
+  "Joaquín Sorolla"
+ ],
+ "durer-1": [
+  "Dürer Self-Portrait 1500 Alte Pinakothek",
+  "Albrecht Dürer"
+ ],
+ "durer-2": [
+  "Dürer Melencolia I",
+  "Albrecht Dürer"
+ ],
+ "durer-3": [
+  "Dürer Rhinoceros woodcut",
+  "Albrecht Dürer"
+ ],
+ "holbein-1": [
+  "Holbein The Ambassadors",
+  "Hans Holbein the Younger"
+ ],
+ "holbein-2": [
+  "Holbein Sir Thomas More Frick",
+  "Hans Holbein the Younger"
+ ],
+ "cranach-1": [
+  "Cranach Martin Luther 1529",
+  "Lucas Cranach the Elder"
+ ],
+ "cranach-2": [
+  "Cranach Adam and Eve Courtauld",
+  "Lucas Cranach the Elder"
+ ],
+ "friedrich-1": [
+  "Friedrich Wanderer above the Sea of Fog",
+  "Caspar David Friedrich"
+ ],
+ "friedrich-2": [
+  "Friedrich The Sea of Ice",
+  "Caspar David Friedrich"
+ ],
+ "marc-1": [
+  "Franz Marc Blue Horse I",
+  "Franz Marc"
+ ],
+ "marc-2": [
+  "Franz Marc Yellow Cow",
+  "Franz Marc"
+ ],
+ "kirchner-1": [
+  "Kirchner Street Berlin 1913 MoMA",
+  "Ernst Ludwig Kirchner"
+ ],
+ "kirchner-2": [
+  "Kirchner Potsdamer Platz",
+  "Ernst Ludwig Kirchner"
+ ],
+ "klimt-1": [
+  "Klimt The Kiss Belvedere",
+  "Gustav Klimt"
+ ],
+ "klimt-2": [
+  "Klimt Portrait of Adele Bloch-Bauer I",
+  "Gustav Klimt"
+ ],
+ "schiele-1": [
+  "Schiele Self-Portrait with Physalis",
+  "Egon Schiele"
+ ],
+ "schiele-2": [
+  "Schiele Death and the Maiden 1915",
+  "Egon Schiele"
+ ],
+ "hogarth-1": [
+  "Hogarth Marriage A-la-Mode Tête à Tête",
+  "William Hogarth"
+ ],
+ "hogarth-2": [
+  "Hogarth Gin Lane",
+  "William Hogarth"
+ ],
+ "gainsborough-1": [
+  "Gainsborough The Blue Boy",
+  "Thomas Gainsborough"
+ ],
+ "gainsborough-2": [
+  "Gainsborough Mr and Mrs Andrews",
+  "Thomas Gainsborough"
+ ],
+ "blake-1": [
+  "Blake The Ancient of Days",
+  "William Blake"
+ ],
+ "blake-2": [
+  "Blake Newton Tate",
+  "William Blake"
+ ],
+ "turner-1": [
+  "Turner The Fighting Temeraire",
+  "J. M. W. Turner"
+ ],
+ "turner-2": [
+  "Turner Rain Steam and Speed",
+  "J. M. W. Turner"
+ ],
+ "turner-3": [
+  "Turner Snow Storm Steam-Boat",
+  "J. M. W. Turner"
+ ],
+ "constable-1": [
+  "Constable The Hay Wain",
+  "John Constable"
+ ],
+ "constable-2": [
+  "Constable Salisbury Cathedral from the Bishop's Grounds",
+  "John Constable"
+ ],
+ "rossetti-1": [
+  "Rossetti Beata Beatrix",
+  "Dante Gabriel Rossetti"
+ ],
+ "rossetti-2": [
+  "Rossetti Proserpine 1874",
+  "Dante Gabriel Rossetti"
+ ],
+ "millais-1": [
+  "Millais Ophelia Tate",
+  "John Everett Millais"
+ ],
+ "millais-2": [
+  "Millais Bubbles 1886",
+  "John Everett Millais"
+ ],
+ "waterhouse-1": [
+  "Waterhouse The Lady of Shalott 1888",
+  "John William Waterhouse"
+ ],
+ "waterhouse-2": [
+  "Waterhouse Hylas and the Nymphs",
+  "John William Waterhouse"
+ ],
+ "munch-1": [
+  "Munch The Scream 1893 National Gallery Oslo",
+  "Edvard Munch"
+ ],
+ "munch-2": [
+  "Munch Madonna 1894",
+  "Edvard Munch"
+ ],
+ "munch-3": [
+  "Munch The Sick Child 1885",
+  "Edvard Munch"
+ ],
+ "hammershoi-1": [
+  "Hammershøi Dust Motes Dancing in the Sunbeams",
+  "Vilhelm Hammershøi"
+ ],
+ "hammershoi-2": [
+  "Hammershøi Interior with Young Woman Seen from the Back",
+  "Vilhelm Hammershøi"
+ ],
+ "larsson-1": [
+  "Carl Larsson Breakfast under the Big Birch",
+  "Carl Larsson"
+ ],
+ "kandinsky-1": [
+  "Kandinsky Composition VII",
+  "Wassily Kandinsky"
+ ],
+ "kandinsky-2": [
+  "Kandinsky Yellow Red Blue 1925",
+  "Wassily Kandinsky"
+ ],
+ "repin-1": [
+  "Repin Barge Haulers on the Volga",
+  "Ilya Repin"
+ ],
+ "repin-2": [
+  "Repin Ivan the Terrible and His Son Ivan",
+  "Ilya Repin"
+ ],
+ "repin-3": [
+  "Repin Reply of the Zaporozhian Cossacks",
+  "Ilya Repin"
+ ],
+ "aivazovsky-1": [
+  "Aivazovsky The Ninth Wave",
+  "Ivan Aivazovsky"
+ ],
+ "aivazovsky-2": [
+  "Aivazovsky The Rainbow 1873",
+  "Ivan Aivazovsky"
+ ],
+ "levitan-1": [
+  "Levitan Above Eternal Peace",
+  "Isaac Levitan"
+ ],
+ "levitan-2": [
+  "Levitan March 1895",
+  "Isaac Levitan"
+ ],
+ "malevich-1": [
+  "Malevich Black Square 1915",
+  "Kazimir Malevich"
+ ],
+ "mucha-1": [
+  "Mucha Gismonda poster",
+  "Alphonse Mucha"
+ ],
+ "mucha-2": [
+  "Mucha The Seasons 1896",
+  "Alphonse Mucha"
+ ],
+ "klee-1": [
+  "Paul Klee Senecio 1922",
+  "Paul Klee"
+ ],
+ "klee-2": [
+  "Paul Klee Twittering Machine",
+  "Paul Klee"
+ ]
+}

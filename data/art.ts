@@ -1,4 +1,5 @@
 import type { Painter } from "@/data/types";
+import more from "@/data/art-europe.json";
 
 const wiki = (t: string) => `https://ko.wikipedia.org/wiki/${encodeURIComponent(t)}`;
 const enwiki = (t: string) => `https://en.wikipedia.org/wiki/${encodeURIComponent(t)}`;
@@ -117,7 +118,7 @@ export const painters: Painter[] = [
     howToLook: ["빛이 어디서 들어오는지 먼저 찾으세요. 카라바조는 무대 조명 감독처럼 그립니다(키아로스쿠로).", "로마의 성당에는 동전을 넣으면 조명이 켜지는 곳이 있습니다. 공짜로 볼 수 있는 진품입니다."],
   },
   {
-    slug: "modigliani", country: "it", name: "아메데오 모딜리아니", en: "Amedeo Modigliani", years: "1884–1920",
+    slug: "modigliani", country: "it", also: ["fr"], name: "아메데오 모딜리아니", en: "Amedeo Modigliani", years: "1884–1920",
     era: "modern", eraNote: "파리의 이탈리아인, 긴 목의 초상",
     life: [
       "토스카나 항구 도시 리보르노에서 태어났습니다.",
@@ -304,7 +305,7 @@ export const painters: Painter[] = [
     },
   },
   {
-    slug: "van-gogh", country: "fr", name: "빈센트 반 고흐", en: "Vincent van Gogh", years: "1853–1890",
+    slug: "van-gogh", country: "fr", also: ["nl"], name: "빈센트 반 고흐", en: "Vincent van Gogh", years: "1853–1890",
     era: "impressionism", eraNote: "후기 인상주의 · 프랑스에서 활동한 네덜란드 화가",
     activeIn: "네덜란드 출신 · 프랑스에서 활동",
     life: [
@@ -322,7 +323,7 @@ export const painters: Painter[] = [
     howToLook: ["붓 자국 방향을 따라가 보세요. 하늘도 나무도 같은 리듬으로 움직입니다.", "편지를 같이 읽으면 그림이 달라 보입니다. 그가 직접 색의 뜻을 설명한 구절이 많습니다."],
   },
   {
-    slug: "picasso", country: "fr", name: "파블로 피카소", en: "Pablo Picasso", years: "1881–1973",
+    slug: "picasso", country: "fr", also: ["es"], name: "파블로 피카소", en: "Pablo Picasso", years: "1881–1973",
     era: "modern", eraNote: "입체주의 · 프랑스에서 활동한 스페인 화가",
     activeIn: "스페인 출신 · 프랑스에서 활동",
     life: [
@@ -348,5 +349,7 @@ export const painters: Painter[] = [
     },
   },
 ];
+
+painters.push(...(more as Painter[]));
 
 export const painterBySlug = (slug: string) => painters.find((p) => p.slug === slug);

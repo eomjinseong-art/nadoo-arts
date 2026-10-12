@@ -19,7 +19,7 @@ async function loadFont(text: string) {
 
 export default async function OpenGraphImage() {
   const title = "나두예술";
-  const sub = "이탈리아·프랑스의 음악과 그림을, 쉬운 한국어로";
+  const sub = "유럽의 음악과 그림을, 쉬운 한국어로";
   const font = await loadFont(`${title}${sub}NADOO ARTS 음악관 미술관 연표 관계도 퀴즈`);
   return new ImageResponse(
     (

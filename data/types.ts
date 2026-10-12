@@ -1,4 +1,5 @@
-export type CountryCode = "it" | "fr";
+export type CountryCode =
+  | "it" | "fr" | "de" | "at" | "gb" | "es" | "nl" | "be" | "ru" | "pl" | "cz" | "hu" | "no" | "se" | "fi" | "dk" | "ro" | "ch";
 
 export type Era = "renaissance" | "baroque" | "classical" | "romantic" | "impressionism" | "modern";
 
@@ -15,6 +16,8 @@ export type Composer = {
   listen: string[];
   yt: string;
   note?: string;
+  /** 함께 소개할 다른 나라(활동지 등) */
+  also?: CountryCode[];
 };
 
 export type Artwork = {
@@ -41,5 +44,7 @@ export type Painter = {
   /** 프랑스에서 활동했지만 태어난 나라는 다름 */
   activeIn?: string;
   /** 저작권이 남은 작품: 이미지 대신 링크 */
+  /** 함께 소개할 다른 나라(활동지 등) */
+  also?: CountryCode[];
   copyrighted?: { note: string; links: { label: string; href: string }[] };
 };

@@ -13,9 +13,9 @@ export function PersonCard({ href, name, en, years, sub, badge }: { href: string
   );
 }
 
-export function Section({ title, en, children }: { title: string; en?: string; children: React.ReactNode }) {
+export function Section({ title, en, children, id }: { title: string; en?: string; children: React.ReactNode; id?: string }) {
   return (
-    <section className="mt-10">
+    <section className="mt-10 scroll-mt-20" id={id}>
       <h2 className="font-serif text-2xl text-ink">
         {title}
         {en ? <span className="ml-2 font-sans text-sm font-normal text-muted">/ {en}</span> : null}
