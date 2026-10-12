@@ -1,14 +1,16 @@
+import { inCountry } from "@/data/countries";
 import Link from "next/link";
 import { ArtImage } from "@/components/ArtImage";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Section } from "@/components/Card";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHead } from "@/components/PageHead";
+import { CountryJump } from "@/components/CountryJump";
 import { painters } from "@/data/art";
 import { COUNTRIES, eraName } from "@/data/countries";
 import { breadcrumbLd, itemListLd, jsonLd, pageMetadata } from "@/lib/seo";
 
-const description = "조토, 보티첼리, 다빈치, 미켈란젤로, 카라바조부터 모네, 고흐, 마티스, 피카소까지. 대표작과 걸린 미술관, 보는 법을 쉬운 한국어로.";
+const description = `반 에이크, 다빈치, 렘브란트, 벨라스케스, 고야, 터너, 모네, 클림트, 뭉크, 피카소까지. 유럽 화가 ${painters.length}명의 대표작과 걸린 미술관, 보는 법.`;
 export const metadata = pageMetadata({ title: "미술관", description, path: "/art" });
 
 export default function ArtPage() {
@@ -16,12 +18,13 @@ export default function ArtPage() {
     <div className="mx-auto max-w-6xl px-4 py-8">
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "미술관", path: "/art" }]), itemListLd("미술관", "/art", painters.map((p) => ({ name: p.name, path: `/art/${p.slug}` })))])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "미술관" }]} />
-      <PageHead kicker="ART GALLERY" title="미술관" lead="그림 사진은 위키미디어 공용의 퍼블릭 도메인 파일만 씁니다. 저작권이 남은 작품(마티스, 피카소)은 링크로 안내합니다. 고흐와 피카소는 프랑스에서 활동한 화가로 함께 둡니다." />
+      <PageHead kicker="ART GALLERY" title="미술관" lead={`유럽 ${COUNTRIES.length}개 나라 화가 ${painters.length}명. 그림 사진은 위키미디어 공용의 퍼블릭 도메인 파일만 씁니다. 저작권이 남은 작품(마티스, 피카소, 달리, 미로, 마그리트, 샤갈, 코코슈카 등)은 링크로 안내합니다. 두 나라에서 활동한 화가(고흐, 피카소 등)는 양쪽에 모두 나옵니다.`} />
+      <CountryJump />
       {COUNTRIES.map((c) => (
-        <Section key={c.code} title={`${c.flag} ${c.name}`} en={c.en}>
+        <Section key={c.code} id={c.code} title={`${c.flag} ${c.name}`} en={c.en}>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {painters
-              .filter((p) => p.country === c.code)
+              .filter((p) => inCountry(p, c.code))
               .map((p) => {
                 const cover = p.works.find((w) => w.img);
                 return (

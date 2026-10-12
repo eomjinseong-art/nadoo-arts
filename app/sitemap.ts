@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { painters } from "@/data/art";
 import { COUNTRIES } from "@/data/countries";
 import { composers } from "@/data/music";
+import { MUSEUMS } from "@/data/museums";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -9,6 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/music",
     "/art",
+    "/map",
+    "/museums",
+    "/lineage",
     "/timeline",
     "/relations",
     "/quiz",
@@ -16,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/countries",
     "/links",
     "/sources",
+    ...MUSEUMS.map((m) => `/museums/${m.slug}`),
     ...COUNTRIES.map((c) => `/countries/${c.code}`),
     ...composers.map((c) => `/music/${c.slug}`),
     ...painters.map((p) => `/art/${p.slug}`),

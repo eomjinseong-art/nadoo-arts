@@ -1,4 +1,5 @@
 import type { Composer } from "@/data/types";
+import more from "@/data/music-europe.json";
 
 const yt = (q: string) => `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
 
@@ -177,7 +178,7 @@ export const composers: Composer[] = [
     yt: yt("Ennio Morricone Gabriel's Oboe"),
   },
   {
-    slug: "lully", country: "fr", name: "장바티스트 륄리", en: "Jean-Baptiste Lully", years: "1632–1687",
+    slug: "lully", country: "fr", also: ["it"], name: "장바티스트 륄리", en: "Jean-Baptiste Lully", years: "1632–1687",
     era: "baroque", eraNote: "루이 14세 궁정의 음악 총감독",
     life: [
       "피렌체에서 태어난 이탈리아 사람(본명 조반니 바티스타 룰리)이었지만, 소년 시절 프랑스로 건너가 프랑스인이 됐습니다.",
@@ -352,5 +353,7 @@ export const composers: Composer[] = [
     yt: yt("Edith Piaf La Vie en rose"),
   },
 ];
+
+composers.push(...(more as Composer[]));
 
 export const composerBySlug = (slug: string) => composers.find((c) => c.slug === slug);

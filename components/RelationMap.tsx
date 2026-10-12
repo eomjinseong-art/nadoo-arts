@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { EDGES, EDGE_KINDS, type Edge } from "@/data/relations";
 import { personInfo } from "@/lib/people";
+import { painters } from "@/data/art";
+import { composers } from "@/data/music";
+import { ERAS } from "@/data/countries";
+
+const eraOf = (id: string) => composers.find((c) => c.slug === id)?.era ?? painters.find((p) => p.slug === id)?.era;
 
 const LANE_FILL = { music: "#e8eefc", art: "#f6e7e1", extra: "#efe9df" } as const;
 const LANE_STROKE = { music: "#3f6fe0", art: "#a34732", extra: "#9b8f80" } as const;
@@ -32,8 +37,8 @@ function components(edges: Edge[]) {
 
 function Cluster({ nodes, edges, index }: { nodes: string[]; edges: Edge[]; index: number }) {
   const n = nodes.length;
-  const W = n <= 2 ? 380 : n <= 4 ? 440 : n <= 8 ? 580 : 720;
-  const H = n <= 2 ? 150 : n <= 4 ? 320 : n <= 8 ? 460 : 580;
+  const W = n <= 2 ? 380 : n <= 4 ? 440 : n <= 8 ? 580 : n <= 14 ? 760 : Math.min(1500, 300 + n * 38);
+  const H = n <= 2 ? 150 : n <= 4 ? 320 : n <= 8 ? 460 : n <= 14 ? 600 : Math.round(W * 0.7);
   const rx = n <= 2 ? 110 : W / 2 - 80;
   const ry = n <= 2 ? 0 : H / 2 - 50;
   const pos = new Map(
@@ -44,8 +49,8 @@ function Cluster({ nodes, edges, index }: { nodes: string[]; edges: Edge[]; inde
   );
   const markerId = `arrow-${index}`;
   return (
-    <figure className="rounded-lg border border-line bg-card p-2">
-      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" role="img" aria-label={`관계도 묶음 ${index + 1}: ${nodes.map((id) => personInfo(id).name).join(", ")}`}>
+    <figure className="overflow-x-auto rounded-lg border border-line bg-card p-2">
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" style={{ minWidth: W > 760 ? Math.round(W * 0.62) : undefined }} role="img" aria-label={`관계도 묶음 ${index + 1}: ${nodes.map((id) => personInfo(id).name).join(", ")}`}>
         <defs>
           {Object.entries(EDGE_KINDS).map(([k, v]) => (
             <marker key={k} id={`${markerId}-${k}`} viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -110,7 +115,10 @@ function Cluster({ nodes, edges, index }: { nodes: string[]; edges: Edge[]; inde
 }
 
 export function RelationMap() {
-  const groups = components(EDGES);
+  const byEra = ERAS.map((era) => {
+    const edges = EDGES.filter((e) => (eraOf(e.from) ?? eraOf(e.to) ?? "modern") === era.id);
+    return { id: era.id, name: era.name, count: edges.length, groups: components(edges) };
+  }).filter((g) => g.count > 0);
   return (
     <div>
       <ul className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted">
@@ -132,11 +140,21 @@ export function RelationMap() {
           <span className="inline-block h-3 w-5 rounded-sm border" style={{ background: LANE_FILL.extra, borderColor: LANE_STROKE.extra }} /> 이 사이트에 글이 없는 사람
         </li>
       </ul>
-      <div className="mt-5 grid gap-4 md:grid-cols-2">
-        {groups.map((g, i) => (
-          <Cluster key={i} nodes={g.nodes} edges={g.edges} index={i} />
-        ))}
-      </div>
+      {byEra.map((g, gi) => (
+        <section key={g.id} className="mt-8">
+          <h3 className="font-serif text-xl text-ink">
+            {g.name} <span className="font-sans text-sm font-normal text-muted">· 관계 {g.count}개</span>
+          </h3>
+          <p className="text-xs text-muted">선을 시작한 사람의 시대로 묶었습니다. 한 사람이 여러 묶음에 나올 수 있습니다.</p>
+          <div className="mt-3 grid gap-4 md:grid-cols-2">
+            {g.groups.map((c, i) => (
+              <div key={i} className={c.nodes.length > 8 ? "md:col-span-2" : ""}>
+                <Cluster nodes={c.nodes} edges={c.edges} index={gi * 100 + i} />
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
     </div>
   );
 }

@@ -1,9 +1,9 @@
 export const SITE_NAME = "나두예술";
 export const SITE_NAME_EN = "Nadoo Arts";
 export const SITE_MARK = "藝";
-export const SITE_TAGLINE = "이탈리아·프랑스의 음악과 그림을, 쉬운 한국어로";
+export const SITE_TAGLINE = "유럽의 음악과 그림을, 쉬운 한국어로";
 export const SITE_SUB =
-  "몬테베르디부터 모리코네까지, 조토부터 피카소까지. 누가 언제 무엇을 만들었고, 어디에 걸려 있고, 어떻게 듣고 보면 좋은지 짧게 적습니다.";
+  "바흐부터 비틀스까지, 반 에이크부터 피카소까지. 유럽 18개 나라 예술가들이 언제 무엇을 만들었고, 어디에 걸려 있고, 어떻게 듣고 보면 좋은지 짧게 적습니다.";
 export const BRAND_LINE = "나두 — 나의 모든 일상을 AI와 함께";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://nadoo-arts.vercel.app";
@@ -49,6 +49,9 @@ export const COUPANG_URL = "https://link.coupang.com/a/hsdzLh1vB6";
 export const NAV = [
   { href: "/music", label: "음악관" },
   { href: "/art", label: "미술관" },
+  { href: "/map", label: "지도" },
+  { href: "/museums", label: "미술관 투어" },
+  { href: "/lineage", label: "음악 계보" },
   { href: "/timeline", label: "연표" },
   { href: "/relations", label: "관계도" },
   { href: "/quiz", label: "퀴즈" },

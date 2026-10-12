@@ -22,7 +22,9 @@ export default function SourcesPage() {
       <PageHead kicker="SOURCES" title="출처와 그림 저작권" lead="글은 아래 자료를 참고해 우리말로 다시 썼습니다. 확실하지 않은 이야기는 본문에 ‘전해지는 이야기’라고 적었습니다." />
       <Section title="참고한 자료" en="References">
         <ul className="list-disc space-y-1 pl-5 text-sm leading-7 text-ink">
-          <li>각 미술관 공식 소장품 페이지: 루브르, 오르세, 우피치, 바티칸 박물관, 런던 내셔널 갤러리, 메트로폴리탄, MoMA 등</li>
+          <li>각 미술관 공식 소장품 페이지: 루브르, 오르세, 우피치, 프라도, 런던 내셔널 갤러리, 에르미타주, 라이크스뮤지엄, 빈 미술사박물관, 바티칸 박물관, 메트로폴리탄, MoMA 등</li>
+          <li>유럽 지도: Natural Earth 1:50m 나라 경계 (퍼블릭 도메인, naturalearthdata.com)</li>
+          <li>영화: 공개 영화 데이터베이스와 백과로 연도·감독·수상 교차 확인</li>
           <li>조르조 바사리, 『미술가 열전』(1550/1568) — 르네상스 화가의 전승. 사실과 다른 부분이 있어 ‘전해지는 이야기’로 구분</li>
           <li>위키미디어 공용 파일 설명 페이지 (작품 연도·소장처·라이선스)</li>
           <li>반 고흐 편지 (반 고흐 미술관 공개본, vangoghletters.org)</li>
