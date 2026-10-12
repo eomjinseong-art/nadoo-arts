@@ -24,6 +24,9 @@ export default function FilmsPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "예술가 영화", path: "/films" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "영화" }]} />
       <PageHead kicker="FILMS" title="예술가 영화" lead="실제로 있는 작품만 적었습니다. 연도·감독·수상은 확인했고, 한국어 제목은 국내 개봉명과 다를 수 있어 원제를 같이 적습니다. 영화는 극이라 사실과 다른 부분이 있습니다. 불법 영상은 안내하지 않습니다." />
+      <p className="mt-6 text-sm text-muted">
+        <a href="https://movie-checklist-sigma.vercel.app/?list=arts" target="_blank" rel="noopener noreferrer" className="text-laurel underline underline-offset-4">영화봇 체크리스트에서 이 영화들 체크하기 →</a>
+      </p>
       <ul className="mt-8 space-y-4">
         {FILMS.map((f) => {
           const w = who(f.about);
