@@ -6,6 +6,7 @@ import { painters } from "@/data/art";
 import { FILMS } from "@/data/films";
 import { composers } from "@/data/music";
 import { breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { NadooHubFilmsLink } from "@/components/NadooHubLink";
 
 const description = "라 비 앙 로즈, 반 고흐: 영원의 문에서, 러빙 빈센트, 카라바조, 고뇌와 환희, 볼레로, 엔니오… 유럽 예술가를 다룬 영화 목록. 아마데우스는 참고용.";
 export const metadata = pageMetadata({ title: "예술가 영화", description, path: "/films" });
@@ -43,6 +44,7 @@ export default function FilmsPage() {
           );
         })}
       </ul>
+      <NadooHubFilmsLink />
     </div>
   );
 }
