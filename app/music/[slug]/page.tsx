@@ -10,6 +10,7 @@ import { composerBySlug, composers } from "@/data/music";
 import { FILMS } from "@/data/films";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
 import { NadooHubPersonLink } from "@/components/NadooHubLink";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -90,6 +91,7 @@ export default async function ComposerPage({ params }: { params: Promise<{ slug:
         {next ? <Link href={`/music/${next.slug}`} className="text-terra">{next.name} →</Link> : <span />}
       </nav>
       <NadooHubPersonLink base="https://nadoo-arts.vercel.app/music/" slug={c.slug!} />
+      <CoupangCard />
     </article>
   );
 }

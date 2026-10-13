@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { CatQ, QuizCat } from "@/data/quiz";
+import { CoupangCard } from "@/components/CoupangCard";
 
 type Mode = QuizCat | "daily";
 type Round = { qs: CatQ[]; opts: string[][] };
@@ -98,6 +99,7 @@ export function QuizRunner({ pool, cats }: { pool: CatQ[]; cats: { id: QuizCat; 
             <p className="mt-1 text-sm text-muted">
               {score === 10 ? "완벽! 오늘의 도슨트는 당신입니다." : score >= 7 ? "훌륭해요. 틀린 문제만 다시 볼까요?" : score >= 4 ? "좋아요. 아래 해설을 읽고 다시 도전해 보세요." : "괜찮아요. 미술관은 원래 두 번 가는 곳입니다."}
             </p>
+            <CoupangCard />
             {score < 10 ? (
               <div className="mt-5">
                 <h3 className="font-serif text-lg text-ink">틀린 문제 다시 보기</h3>

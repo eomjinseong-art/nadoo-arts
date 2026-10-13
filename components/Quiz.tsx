@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { QuizQ } from "@/data/quiz";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export function Quiz({ title, en, questions, base }: { title: string; en: string; questions: QuizQ[]; base: string }) {
   const [index, setIndex] = useState(0);
@@ -33,6 +34,7 @@ export function Quiz({ title, en, questions, base }: { title: string; en: string
           <button type="button" onClick={() => { setIndex(0); setPicked(null); setScore(0); }} className="mt-4 rounded-full border border-terra px-4 py-2 text-sm text-terra hover:bg-terra/10">
             다시 풀기
           </button>
+          <CoupangCard />
         </div>
       ) : (
         <div className="mt-4">

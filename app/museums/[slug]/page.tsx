@@ -7,6 +7,7 @@ import { PageHead } from "@/components/PageHead";
 import { countryByCode } from "@/data/countries";
 import { MUSEUMS, museumBySlug } from "@/data/museums";
 import { breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -35,6 +36,7 @@ export default async function MuseumPage({ params }: { params: Promise<{ slug: s
           {m.route.map((r) => <li key={r}>{r}</li>)}
         </ol>
       </section>
+      <CoupangCard />
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-ink">꼭 볼 그림 <span className="font-sans text-sm font-normal text-muted">/ Highlights</span></h2>
         <div className="mt-4 grid gap-5 sm:grid-cols-2">

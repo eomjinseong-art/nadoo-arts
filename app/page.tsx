@@ -10,6 +10,7 @@ import { ALL_QUIZ } from "@/data/quiz";
 import { FILMS } from "@/data/films";
 import { jsonLd, pageMetadata, websiteLd } from "@/lib/seo";
 import { SITE_SUB, SITE_TAGLINE } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 const description = `${SITE_TAGLINE}. ${SITE_SUB}`;
 export const metadata = pageMetadata({ title: "나두예술", description, path: "/" });
@@ -54,6 +55,7 @@ export default function Home() {
         ))}
       </section>
 
+      <CoupangCard />
       <section className="mt-12">
         <h2 className="font-serif text-2xl text-ink">나라별로 보기 <span className="font-sans text-sm font-normal text-muted">/ By country</span></h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
