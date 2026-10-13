@@ -12,6 +12,7 @@ import { MUSEUMS } from "@/data/museums";
 import { EDGES, EDGE_KINDS } from "@/data/relations";
 import { FILMS } from "@/data/films";
 import { personInfo } from "@/lib/people";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -51,6 +52,7 @@ export default async function CountryPage({ params }: { params: Promise<{ code: 
           ))}
         </div>
       </Section>
+      <CoupangCard />
       <Section title="미술" en="Art">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {ps.map((x) => (

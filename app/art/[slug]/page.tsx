@@ -11,6 +11,7 @@ import { countryByCode, eraName } from "@/data/countries";
 import { FILMS } from "@/data/films";
 import { articleLd, breadcrumbLd, jsonLd, pageMetadata } from "@/lib/seo";
 import { NadooHubPersonLink } from "@/components/NadooHubLink";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -101,6 +102,7 @@ export default async function PainterPage({ params }: { params: Promise<{ slug: 
         {next ? <Link href={`/art/${next.slug}`} className="text-terra">{next.name} →</Link> : <span />}
       </nav>
       <NadooHubPersonLink base="https://nadoo-arts.vercel.app/art/" slug={p.slug!} />
+      <CoupangCard />
     </article>
   );
 }
