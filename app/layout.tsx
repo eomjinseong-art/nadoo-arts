@@ -15,7 +15,7 @@ const serif = Noto_Serif_KR({ subsets: ["latin"], variable: "--font-noto-serif",
 const description = `${SITE_TAGLINE}. ${SITE_SUB}`;
 
 export const metadata: Metadata = {
-  verification: { google: "LglMaYLzS6dacAPQ5ZgZdPgzdtfLbp_1Rk5vh3WNPlM" },
+  verification: { google: "LglMaYLzS6dacAPQ5ZgZdPgzdtfLbp_1Rk5vh3WNPlM", other: { "naver-site-verification": "04af49746124840cca84b69ba03abb698e527a60" } },
   metadataBase: new URL(SITE_URL),
   title: { default: `${SITE_NAME} · 쉬운 음악·미술 이야기`, template: `%s · ${SITE_NAME}` },
   description,
