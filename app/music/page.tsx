@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { inCountry } from "@/data/countries";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PersonCard, Section } from "@/components/Card";
@@ -17,6 +18,7 @@ export default function MusicPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "음악관", path: "/music" }]), itemListLd("음악관", "/music", composers.map((c) => ({ name: c.name, path: `/music/${c.slug}` })))])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "음악관" }]} />
       <PageHead kicker="MUSIC HALL" title="음악관" lead={`유럽 ${COUNTRIES.length}개 나라 ${composers.length}명. 한 사람씩, 무엇부터 들으면 좋은지 적었습니다. 영상은 직접 넣지 않고 유튜브 검색으로 안내합니다. 두 나라에서 활동한 사람은 양쪽에 모두 나옵니다.`} />
+      <NadooAd inline />
       <CountryJump />
       {COUNTRIES.map((c) => (
         <Section key={c.code} id={c.code} title={`${c.flag} ${c.name}`} en={c.en}>

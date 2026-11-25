@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Section } from "@/components/Card";
 import { JsonLd } from "@/components/JsonLd";
@@ -14,6 +15,7 @@ export default function RelationsPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "관계도", path: "/relations" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "관계도" }]} />
       <PageHead kicker="RELATIONS" title="관계도" lead="선의 색과 모양이 관계의 종류입니다. 화살표는 배움과 영향의 방향. 굵은 이름을 누르면 그 사람의 글로 갑니다. 선 위에 마우스를 올리면 설명이 나옵니다." />
+      <NadooAd inline />
       <div className="mt-6">
         <RelationMap />
       </div>

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArtImage } from "@/components/ArtImage";
@@ -74,6 +75,7 @@ export default async function PainterPage({ params }: { params: Promise<{ slug: 
         </div>
       </Section>
 
+      <NadooAd inline />
       <Section title="이렇게 보세요" en="How to look">
         <ul className="list-disc space-y-2 pl-5 text-base leading-8 text-ink">
           {p.howToLook.map((t) => <li key={t}>{t}</li>)}

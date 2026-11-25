@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { inCountry } from "@/data/countries";
 import Link from "next/link";
 import { ArtImage } from "@/components/ArtImage";
@@ -56,6 +57,7 @@ export default function Home() {
       </section>
 
       <CoupangCard />
+      <NadooAd inline />
       <section className="mt-12">
         <h2 className="font-serif text-2xl text-ink">나라별로 보기 <span className="font-sans text-sm font-normal text-muted">/ By country</span></h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">

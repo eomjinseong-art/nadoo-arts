@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { inCountry } from "@/data/countries";
 import Link from "next/link";
 import { ArtImage } from "@/components/ArtImage";
@@ -19,6 +20,7 @@ export default function ArtPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "미술관", path: "/art" }]), itemListLd("미술관", "/art", painters.map((p) => ({ name: p.name, path: `/art/${p.slug}` })))])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "미술관" }]} />
       <PageHead kicker="ART GALLERY" title="미술관" lead={`유럽 ${COUNTRIES.length}개 나라 화가 ${painters.length}명. 그림 사진은 위키미디어 공용의 퍼블릭 도메인 파일만 씁니다. 저작권이 남은 작품(마티스, 피카소, 달리, 미로, 마그리트, 샤갈, 코코슈카 등)은 링크로 안내합니다. 두 나라에서 활동한 화가(고흐, 피카소 등)는 양쪽에 모두 나옵니다.`} />
+      <NadooAd inline />
       <CountryJump />
       {COUNTRIES.map((c) => (
         <Section key={c.code} id={c.code} title={`${c.flag} ${c.name}`} en={c.en}>

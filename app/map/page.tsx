@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EuropeMap } from "@/components/EuropeMap";
 import { JsonLd } from "@/components/JsonLd";
@@ -25,6 +26,7 @@ export default function MapPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "지도", path: "/map" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "지도" }]} />
       <PageHead kicker="MAP OF EUROPE" title="유럽 예술 지도" lead="나라를 누르면 그 나라의 작곡가와 화가가 나옵니다. 활동한 나라가 둘 이상인 사람(쇼팽, 고흐, 피카소 등)은 양쪽에 모두 나옵니다." />
+      <NadooAd inline />
       <div className="mt-8">
         <EuropeMap w={map.w} h={map.h} shapes={map.shapes} labels={map.labels} countries={countries} />
       </div>

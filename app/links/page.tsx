@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PageHead } from "@/components/PageHead";
 import { GREECE_URL, LANG_URL, MYTH_URL, ROME_URL, TIMELINE_URL, WORLD_URL } from "@/lib/site";
@@ -50,6 +51,7 @@ export default function LinksPage() {
     <div className="mx-auto max-w-4xl px-4 py-8">
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "더 보기" }]} />
       <PageHead kicker="MORE" title="더 보기" lead="그림 속 이야기는 신화와 역사에서 왔습니다. 나두의 다른 사이트에서 이어 읽어 보세요." />
+      <NadooAd inline />
       <div className="mt-8 space-y-8">
         {GROUPS.map((g) => (
           <section key={g.title}>

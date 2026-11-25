@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -60,6 +61,7 @@ export default async function ComposerPage({ params }: { params: Promise<{ slug:
         </ul>
       </Section>
 
+      <NadooAd inline />
       <Section title="이렇게 들어 보세요" en="Listening points">
         <ul className="list-disc space-y-2 pl-5 text-base leading-8 text-ink">
           {c.listen.map((t) => <li key={t}>{t}</li>)}

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -89,6 +90,7 @@ export default function LineagePage() {
           </div>
         ))}
       </section>
+      <NadooAd inline />
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-ink">선 하나하나의 이야기 <span className="font-sans text-sm font-normal text-muted">/ Links</span></h2>
         <ul className="mt-4 grid gap-2 md:grid-cols-2">
