@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArtImage } from "@/components/ArtImage";
@@ -37,6 +38,7 @@ export default async function MuseumPage({ params }: { params: Promise<{ slug: s
         </ol>
       </section>
       <CoupangCard />
+      <NadooAd inline />
       <section className="mt-10">
         <h2 className="font-serif text-2xl text-ink">꼭 볼 그림 <span className="font-sans text-sm font-normal text-muted">/ Highlights</span></h2>
         <div className="mt-4 grid gap-5 sm:grid-cols-2">

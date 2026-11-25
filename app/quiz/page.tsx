@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHead } from "@/components/PageHead";
@@ -14,6 +15,7 @@ export default function QuizPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "퀴즈", path: "/quiz" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "퀴즈" }]} />
       <PageHead kicker="QUIZ" title="퀴즈" lead={`모두 ${ALL_QUIZ.length}문제. 범주를 고르거나 ‘오늘의 도전’으로 10문제를 섞어 풀어 보세요. 답마다 짧은 해설이 붙습니다.`} />
+      <NadooAd inline />
       <div className="mt-8">
         <QuizRunner pool={ALL_QUIZ} cats={QUIZ_CATS} />
       </div>

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -18,6 +19,7 @@ export default function TimelinePage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "연표", path: "/timeline" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "연표" }]} />
       <PageHead kicker="TIMELINE" title="연표" lead="시대 구분은 대략입니다. 한 사람이 두 시대에 걸치기도 합니다. 왼쪽은 음악, 가운데는 미술, 오른쪽은 같은 시기의 한반도. 유럽 18개 나라 예술가가 시대별로 모여 있습니다." />
+      <NadooAd inline />
       <ol className="mt-8 space-y-8">
         {PERIODS.map((p) => {
           const ms = composers.filter((c) => c.era === p.id);

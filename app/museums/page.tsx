@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { ArtImage } from "@/components/ArtImage";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -16,6 +17,7 @@ export default function MuseumsPage() {
       <JsonLd data={jsonLd([breadcrumbLd([{ name: "홈", path: "/" }, { name: "미술관 투어", path: "/museums" }])])} />
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "미술관 투어" }]} />
       <PageHead kicker="MUSEUM TOURS" title="미술관 투어" lead="유럽 8대 미술관에서 무엇을 먼저 볼까요. 꼭 볼 그림, 걷는 순서, 그리고 그 그림을 그린 사람 이야기로 이어집니다." />
+      <NadooAd inline />
       <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {MUSEUMS.map((m) => {
           const cover = m.highlights.find((h) => h.img)?.img;

@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { inCountry } from "@/data/countries";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -45,6 +46,7 @@ export default async function CountryPage({ params }: { params: Promise<{ code: 
         <Link href="/map" className="rounded-full border border-line bg-card px-3 py-1 hover:border-terra">지도에서 보기</Link>
         <Link href="/lineage" className="rounded-full border border-line bg-card px-3 py-1 hover:border-terra">음악 계보</Link>
       </div>
+      <NadooAd inline />
       <Section title="음악" en="Music">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {ms.map((x) => (

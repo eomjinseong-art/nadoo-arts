@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Section } from "@/components/Card";
 import { PageHead } from "@/components/PageHead";
@@ -31,6 +32,7 @@ export default function SourcesPage() {
           <li>위키백과·위키데이터 (연도·소장처 교차 확인용)</li>
         </ul>
       </Section>
+      <NadooAd inline />
       <Section title="그림 파일 출처" en="Image credits">
         <p className="text-sm leading-7 text-muted">
           모든 그림 파일은 위키미디어 공용(Wikimedia Commons)에서 퍼블릭 도메인(또는 CC0)으로 표시된 것만 내려받아 이 사이트에 두었습니다. 원작은 작가 사후 70년이 훨씬 지난 작품입니다. 마티스와 피카소처럼 저작권이 남았거나 나라마다 다를 수 있는 작품은 그림을 싣지 않고 링크로 안내합니다.

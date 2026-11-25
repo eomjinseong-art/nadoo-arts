@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { inCountry } from "@/data/countries";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -14,6 +15,7 @@ export default function CountriesPage() {
     <div className="mx-auto max-w-4xl px-4 py-8">
       <Breadcrumbs items={[{ href: "/", label: "홈" }, { label: "나라별" }]} />
       <PageHead kicker="COUNTRIES" title="나라별로 보기" lead="유럽 18개 나라. 지도에서 고르고 싶다면 ‘지도’ 메뉴로 가 보세요." />
+      <NadooAd inline />
       <ul className="mt-8 grid gap-4 sm:grid-cols-2">
         {COUNTRIES.map((c) => (
           <li key={c.code}>
